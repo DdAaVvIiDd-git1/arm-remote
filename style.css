@@ -2,11 +2,11 @@ body {
     font-family: Arial, sans-serif;
     background: #f5f7fa;
     margin: 0;
-    padding: 32px;
+    padding: 5%;                  /* was 32px */
     display: flex;
-    justify-content: center;  /* put sliders + image in center */
-    align-items: flex-start;  /* align from the top */
-    gap: 40px;                /* space between sliders and image */
+    justify-content: center;      /* put sliders + image in center */
+    align-items: flex-start;      /* align from the top */
+    gap: 5%;                      /* was 40px */
 }
 
 /* Big image button */
@@ -17,8 +17,8 @@ body {
 }
 
 .img img {
-    width: 500px;
-    height: 500px;
+    width: 40vw;                  /* 40% of viewport width */
+    height: auto;                 /* keep aspect ratio */
     object-fit: contain;
 }
 
@@ -26,20 +26,21 @@ body {
 .sliders {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    width: 360px;
+    gap: 3%;                      /* was 15px */
+    width: 40%;                   /* was 360px */
 }
 
 .sliders > div {
     background: #fff;
-    border-radius: 10px;
+    border-radius: 2%;            /* was 10px */
     box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-    padding: 12px 18px;
+    padding: 3%;                  /* was 12px 18px */
 }
 
 /* Range sliders */
 input[type="range"] {
     width: 100%;
     accent-color: #2563eb;
-    height: 4px;
+    height: 0.5vh;                /* was 4px */
 }
+
